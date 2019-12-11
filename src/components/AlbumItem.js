@@ -1,4 +1,5 @@
 import React from 'react';
+import './albumItem.scss'
 
 function AlbumItem(props) {
 
@@ -12,11 +13,11 @@ function AlbumItem(props) {
         <div className="col-sm-3 mb-4">
             <img src={albumItem["im:image"][2].label} className="mx-auto d-block card-img-top"/>
             <div className="card-body bg-light">
-                <h1 className="card-title">"{albumItem["im:name"].label}"</h1>
-                <h2 className="card-title">{albumItem["im:artist"].label}</h2>
-                <p className="card-text">{albumItem["im:releaseDate"].attributes.label}</p>
-                <span className="card-text">{albumItem.rights.label}</span><br/>
-                <span className="btn btn-primary">Buy: {albumItem["im:price"].label}</span>
+                <h1 className="card-title name">"{albumItem["im:name"].label}"</h1>
+                <h2 className="card-title artist">{albumItem["im:artist"].label}</h2>
+                <span className="card-text rights">{albumItem.rights.label}</span>
+                {/*<p className="card-text data">{albumItem["im:releaseDate"].attributes.label}</p>*/}
+                <button className="buy">Buy: {albumItem["im:price"].label}</button>
             </div>
         </div>
     )

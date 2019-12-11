@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
+import './footer.scss'
 
 
-class Footer extends Component{
+class Footer extends Component {
 
     render() {
-        return(
-            <h1>Footer</h1>
+        return (
+            <div className="container footer">
+                    <p className="footerText">© Bring-On 2019</p>
+            </div>
         )
     }
 }

@@ -1,0 +1,29 @@
+.name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.artist {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.rights {
+  font-size: 0.6rem;
+}
+
+.buy {
+  display: block;
+  cursor: pointer;
+  background-color: #808080;
+  border: 0 solid #808080;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 #808080;
+  margin-top: 3px;
+
+  &:hover {
+    background-color: #cccccc;
+    -webkit-transition-duration: 0.5s;
+}
+}

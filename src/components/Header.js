@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import './header.scss';
+
 
 class Header extends Component {
 
     render() {
         return(
-            <h1>This is top 100 album according to iTunes</h1>
+            <div className="jumbotron-fluid container-fluid text-center header">
+                <h1 className="headerText">This is iTunes's 100 Best Albums</h1>
+            </div>
         )
     }
 }
-
 export default Header;

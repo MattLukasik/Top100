@@ -1,0 +1,14 @@
+.jumbotron-fluid,.container-fluid,.header {
+  box-shadow: 0 5px 10px grey;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  z-index: 1;
+
+  .headerText {
+    padding: 10px;
+  }
+
+}
