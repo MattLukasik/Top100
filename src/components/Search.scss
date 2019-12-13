@@ -1,0 +1,35 @@
+.search_container {
+  position: relative;
+  z-index: 1;
+
+  .search_form {
+
+    .search_field {
+      padding: 6px;
+      font-size: 17px;
+      border: none;
+      position: fixed;
+      right: 30px;
+      top: 12px;
+    }
+
+    .btn {
+      padding: 6px;
+      background:  #808080;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px 0 #808080;
+      position: fixed;
+      right: 30px;
+      top: 53px;
+
+
+      &:hover {
+        background-color: #cccccc;
+        -webkit-transition-duration: 0.5s;
+      }
+    }
+  }
+}

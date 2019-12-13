@@ -13,7 +13,7 @@ function AlbumList(props) {
         <div className="py-5 my-5 bg-secondary">
             <div className="container">
                 <div className="row">
-                    {albumData.map(album => <AlbumItem albumItem={album} key={album.id.attributes['im:id']}/>)}
+                    {typeof albumData.error !== "undefined" ? <h3>{albumData.error.message}</h3>:albumData.map(album => <AlbumItem albumItem={album} key={album.id.attributes['im:id']}/>)}
                 </div>
             </div>
         </div>
