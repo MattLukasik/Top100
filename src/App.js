@@ -14,6 +14,7 @@ class App extends Component {
         };
     }
 
+    // metoda, która aktualizuje stan albumList (tablica albumów wyszukanych w komponencie Search)
     displayAlbums = albumList => {
         this.setState({
             albumList

@@ -16,7 +16,6 @@ function AlbumItem(props) {
                 <h1 className="card-title name">"{albumItem["im:name"].label}"</h1>
                 <h2 className="card-title artist">{albumItem["im:artist"].label}</h2>
                 <span className="card-text rights">{albumItem.rights.label}</span>
-                {/*<p className="card-text data">{albumItem["im:releaseDate"].attributes.label}</p>*/}
                 <button className="buy">Buy: {albumItem["im:price"].label}</button>
             </div>
         </div>

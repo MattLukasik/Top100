@@ -22,8 +22,8 @@ class Search extends Component {
             }
         }).then(data => {
             this.props.displayAlbums(data.feed.entry);
-            console.log(data.feed.entry);
-            this.setState({});
+            // console.log(data.feed.entry);
+
         }).catch(err => {
             console.log(err);
         });
@@ -36,29 +36,30 @@ class Search extends Component {
     };
 
     // po kliknięciu w "Search" pobieram dane na temat WYBRANYCH albumów
-    getAlbum = e => {
-        e.preventDefault();
+    //wyszukiwanie jeszcze nie działa, muszę nad tym popracować
 
-        //ale za cholerę nie wiem jak tu podać do fetcha o kryterium
-        // const {album} = this.state;
-
-        fetch(this.state.api).then(resp => {
-            if (resp.ok) {
-                return resp.json();
-            } else {
-                throw new Error("Connection problem");
-            }
-        }).then(data => {
-            if (data.feed.entry.length === 0)
-                throw new Error("Sorry, we can't find your Artist!");
-
-            this.props.displayAlbums(data.feed.entry);
-            this.setState({});
-        }).catch(err => {
-            this.props.displayAlbums({error: e});
-            console.log(err)
-        });
-    };
+    // getAlbum = e => {
+    //     e.preventDefault();
+    //
+    //     const {album} = this.state;
+    //
+    //     fetch(this.state.api).then(resp => {
+    //         if (resp.ok) {
+    //             return resp.json();
+    //         } else {
+    //             throw new Error("Connection problem");
+    //         }
+    //     }).then(data => {
+    //         if (data.feed.entry["im:artist"].label !== album)
+    //             throw new Error("Sorry, we can't find your Artist!");
+    //
+    //         if(data.feed.entry["im:artist"].label === album)
+    //         this.props.displayAlbums(data.feed.entry);
+    //
+    //     }).catch(err => {
+    //         console.log(err)
+    //     });
+    // };
 
 
     render() {
