@@ -1,8 +1,10 @@
 # Top100 
+##### HTML5, CSS, Sass, JavaScript, Bootstrap, React
 
 Simple website displaying the top 100 songs based on the iTunes API.
 
-##### HTML5, CSS, Sass, JavaScript, Bootstrap, React
+http://precious-space.surge.sh
+
 #
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
